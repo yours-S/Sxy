@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>点击下面的按钮来执行循环，该循环会跳过i为3的倍数的数字。</p>
+<button onclick="myFunction()">点击这里</button>
+<p id="demo"></p>
+<script>
+    function myFunction(){
+        var x="",i=0;
+        while (i<30){
+            if (i%3==0){
+                i++;
+                continue;
+            }
+            x=x + "该数字为" + i + "<br>";
+            i++;
+        }
+        document.getElementById("demo").innerHTML=x;
+    }
+</script>
+
+</body>
+</html>
